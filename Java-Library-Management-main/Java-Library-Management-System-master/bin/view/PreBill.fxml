@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="800.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BillController">
+   <children>
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="71.0" prefHeight="200.0" prefWidth="746.0">
+        <columns>
+          <TableColumn fx:id="itemBiNoColumn" prefWidth="86.0" text="BillNo" />
+				<TableColumn fx:id="itemBidNoColumn" prefWidth="97.0" text="BillDate" />				
+				<TableColumn fx:id="itemAmtColumn" prefWidth="104.0" text="BillAmount" />
+				<TableColumn fx:id="itemBoIdColumn" prefWidth="90.0" text="BookId" />
+				<TableColumn fx:id="itemMeIdColumn" prefWidth="86.0" text="MemberId" />
+				<TableColumn fx:id="itemLiIdColumn" prefWidth="88.0" text="LibrarianId" />
+				<TableColumn fx:id="itemIssColumn" prefWidth="92.0" text="DateIssued" />
+				<TableColumn fx:id="itemRetColumn" prefWidth="107.0" text="ReturnedDate" />
+        </columns>
+      </TableView>
+      <Button layoutX="764.0" layoutY="135.0" mnemonicParsing="false" onAction="#createBill" prefHeight="27.0" prefWidth="103.0" text="Create Bill" />
+
+
+		<Label layoutX="31.0" layoutY="348.0" text="Bill Date" />
+		
+
+		<DatePicker fx:id="billDate" layoutX="19.0" layoutY="365.0" prefHeight="25.0" prefWidth="103.0" />
+		<TextField fx:id="billAmount" layoutX="130.0" layoutY="365.0" prefHeight="25.0" prefWidth="114.0" />
+		<Label layoutX="137.0" layoutY="348.0" text="Book Amount" />
+
+		<Label fx:id="check" layoutX="19.0" layoutY="459.0" text="Message" textFill="#d32121" />
+		<Label layoutX="272.0" layoutY="348.0" text="Returned Date" />
+      <DatePicker fx:id="dateReturned" layoutX="262.0" layoutY="365.0" />
+      <Button layoutX="764.0" layoutY="221.0" mnemonicParsing="false" onAction="#mainPage" prefHeight="27.0" prefWidth="114.0" text="Main Menu" />
+		
+     
+   </children>
+</AnchorPane>

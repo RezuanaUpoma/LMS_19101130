@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import model.StringTextField?>
+<?import model.NumberTextField?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1035.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewPeriodicalController">
+   <children>
+      <TableView fx:id="tableView" layoutX="8.0" layoutY="62.0" prefHeight="201.0" prefWidth="848.0">
+        <columns>
+         <TableColumn fx:id="itemIdColumn" prefWidth="75.0" text="Book ID" />
+				<TableColumn fx:id="itemNameColumn" prefWidth="121.0" text="BookName" />
+				<TableColumn fx:id="itemAutColumn" prefWidth="85.0" text="BookAuthor" />
+				<TableColumn fx:id="itemNoColumn" prefWidth="115.0" text="NumberOfBooks" />
+				<TableColumn fx:id="itemTypColumn" prefWidth="74.0" text="BookType" />
+				<TableColumn fx:id="itemStatColumn" prefWidth="51.0" text="Status" />
+				<TableColumn fx:id="itemLimiColumn" prefWidth="98.0" text="BookLimitDays" />
+				<TableColumn fx:id="itemForColumn" prefWidth="67.0" text="Bookformat" />
+				<TableColumn fx:id="itemSchColumn" prefWidth="71.0" text="Schedule" />
+				<TableColumn fx:id="itemEdiColumn" prefWidth="91.0" text="BookEdition" />
+
+        </columns>
+      </TableView>
+      <Button layoutX="896.0" layoutY="103.0" mnemonicParsing="false" onAction="#addReferenceBook" prefHeight="28.0" prefWidth="99.0" text="Add Reference Book" />
+      <Button layoutX="896.0" layoutY="148.0" mnemonicParsing="false" onAction="#updateRerenceBook" text="Update Reference Book" />
+      <Button layoutX="896.0" layoutY="196.0" mnemonicParsing="false" onAction="#issueBook" prefHeight="27.0" prefWidth="98.0" text="Issue Reference Book" />
+      <Label layoutX="32.0" layoutY="349.0" text="Bookname" />
+
+		<StringTextField fx:id="bookName" layoutX="18.0" layoutY="366.0" prefHeight="26.0" prefWidth="104.0" />
+		<StringTextField fx:id="bookAuthor" layoutX="130.0" layoutY="365.0" prefHeight="26.0" prefWidth="115.0" />
+		<Label layoutX="139.0" layoutY="348.0" text="Author" />
+		<NumberTextField fx:id="noOfBooks" layoutX="255.0" layoutY="365.0" prefHeight="26.0" prefWidth="115.0" />
+		<Label layoutX="262.0" layoutY="348.0" text="No of books" />
+		<StringTextField fx:id="typeOfBooks" layoutX="380.0" layoutY="365.0" prefHeight="26.0" prefWidth="115.0" />
+		<Label layoutX="387.0" layoutY="348.0" text="Book Type" />
+		<StringTextField fx:id="bookStatus" layoutX="505.0" layoutY="365.0" prefHeight="26.0" prefWidth="115.0" />
+		<Label layoutX="512.0" layoutY="348.0" text="Book Status" />
+		<NumberTextField fx:id="bookLimitDays" layoutX="634.0" layoutY="365.0" prefHeight="26.0" prefWidth="115.0" />
+		<Label layoutX="638.0" layoutY="348.0" text="Limit availability of books" />
+
+		<Label fx:id="check" layoutX="28.0" layoutY="456.0" text="Message" textFill="#c32121" />
+		<Label layoutX="32.0" layoutY="401.0" text="Format" />
+		<StringTextField fx:id="format" layoutX="19.0" layoutY="419.0" prefHeight="25.0" prefWidth="103.0" />
+		<Label layoutX="140.0" layoutY="402.0" text="Book Released" />
+		<StringTextField fx:id="schedule" layoutX="136.0" layoutY="419.0" prefHeight="25.0" prefWidth="103.0" />
+		<Label layoutX="262.0" layoutY="402.0" text="Edition" />
+		<NumberTextField fx:id="edition" layoutX="258.0" layoutY="419.0" prefHeight="25.0" prefWidth="103.0" />
+		  <Label layoutX="171.0" layoutY="485.0" text="Member ID" />
+      <NumberTextField fx:id="memberId" layoutX="159.0" layoutY="502.0" prefHeight="25.0" prefWidth="103.0" />
+      <Label layoutX="288.0" layoutY="485.0" text="Librarian ID" />
+      <NumberTextField fx:id="librarianId" layoutX="279.0" layoutY="502.0" prefHeight="25.0" prefWidth="103.0" />
+      <Label fx:id="check1" layoutX="6.0" layoutY="506.0" text=" Enter details" />
+      <Button layoutX="893.0" layoutY="240.0" mnemonicParsing="false" onAction="#mainPage" prefHeight="27.0" prefWidth="98.0" text="Main Page" />
+     
+   </children>
+</AnchorPane>

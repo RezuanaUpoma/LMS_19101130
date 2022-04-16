@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.DateCell?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainMenuController">
+	<children>
+
+		<Button layoutX="196.0" layoutY="188.0" mnemonicParsing="false" onAction="#GeneralBook" text="General Book" />
+		<Button layoutX="317.0" layoutY="188.0" mnemonicParsing="false" onAction="#ReferenceBook" text="Reference Book" />
+		<Text fill="#2ea5d0" fontSmoothingType="LCD" layoutX="173.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Admin Page" textAlignment="CENTER">
+			<font>
+				<Font size="26.0" />
+			</font>
+		</Text>
+		<Button layoutX="196.0" layoutY="238.0" mnemonicParsing="false" onAction="#Addmember" text="Add Member" />
+		<Button layoutX="317.0" layoutY="238.0" mnemonicParsing="false" onAction="#Createbill" text="Create Bill" />
+		<Button layoutX="196.0" layoutY="289.0" mnemonicParsing="false" onAction="#CreatedBill" text="Created Bills" />
+      <Button layoutX="317.0" layoutY="289.0" mnemonicParsing="false" onAction="#Signout" text="SignOut" />
+	</children>
+</AnchorPane>

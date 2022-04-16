@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.DateCell?>
+<?import model.NumberTextField?>
+
+
+<AnchorPane prefHeight="350.0" prefWidth="546.0" style="-fx-background-color: #17CE84;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <NumberTextField  fx:id="username" layoutX="170.0" layoutY="91.0"/>
+      <PasswordField fx:id="userpassword" layoutX="170.0" layoutY="148.0" promptText="Password" />
+      <Button layoutX="200.0" layoutY="208.0" mnemonicParsing="false" onAction="#btnloginButton" text="User" />
+      <Button layoutX="273.0" layoutY="208.0" mnemonicParsing="false" onAction="#btnloginAdminButton" text="Admin" />
+      <Label layoutX="91.0" layoutY="34.0" prefHeight="23.0" prefWidth="366.0" text="       Library Management System" textFill="#1340c9">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="user" layoutX="99.0" layoutY="96.0" text="ID" textFill="#2211bf" />
+      <Label layoutX="99.0" layoutY="153.0" />
+      <Label fx:id="pass" layoutX="89.0" layoutY="153.0" text="Password" textFill="#121bc9" />
+      <Label fx:id="check" layoutX="102.0" layoutY="279.0" text="Message" textFill="#bf0b0b" />
+   </children>
+</AnchorPane>

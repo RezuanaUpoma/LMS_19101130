@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PostBillController">
+   <children>
+      <TableView fx:id="tableView" layoutX="31.0" layoutY="70.0" prefHeight="200.0" prefWidth="612.0">
+        <columns>
+          <TableColumn fx:id="itemBiNoColumn" prefWidth="75.0" text="BillNo" />
+          <TableColumn fx:id="itemBidNoColumn" prefWidth="75.0" text="BillDate" />
+            <TableColumn fx:id="itemAmtColumn" prefWidth="75.0" text="BillAmount" />
+            <TableColumn fx:id="itemBoIdColumn" prefWidth="75.0" text="BookID" />
+            <TableColumn fx:id="itemMeIdColumn" prefWidth="75.0" text="UserID" />
+            <TableColumn fx:id="itemLiIdColumn" prefWidth="75.0" text="librarianID" />
+            <TableColumn fx:id="itemIssColumn" prefWidth="75.0" text="IssuedDate" />
+            <TableColumn fx:id="itemRetColumn" prefWidth="75.0" text="ReturnedDate" />
+            <TableColumn fx:id="itemStatColumn" prefWidth="75.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="651.0" layoutY="157.0" mnemonicParsing="false" onAction="#updateCreatedBill" prefHeight="27.0" prefWidth="108.0" text="UpdateBill" />
+      <Label layoutX="67.0" layoutY="359.0" text="BillDate" />
+      <DatePicker fx:id="billDate" layoutX="121.0" layoutY="354.0" prefHeight="27.0" prefWidth="88.0" />
+      <TextField fx:id="billAmount" layoutX="165.0" layoutY="410.0" promptText="Book Amount" />
+      <Label layoutX="50.0" layoutY="415.0" text="Book Amount" />
+      <Label fx:id="check" layoutX="58.0" layoutY="486.0" text="Message" />
+      <Button layoutX="653.0" layoutY="216.0" mnemonicParsing="false" onAction="#mainPage" prefHeight="27.0" prefWidth="108.0" text="MainPage" />
+   </children>
+</AnchorPane>

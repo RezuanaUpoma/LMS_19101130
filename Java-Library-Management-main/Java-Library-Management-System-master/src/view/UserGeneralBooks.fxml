@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"  prefHeight="500.0" prefWidth="1039.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewBookController">
+   <children>
+      <TableView fx:id="tableView" layoutX="27.0" layoutY="50.0" prefHeight="200.0" prefWidth="964.0">
+        <columns>
+          <TableColumn fx:id="itemIdColumn" prefWidth="75.0" text="BookID" />
+				<TableColumn fx:id="itemNameColumn" prefWidth="89.0" text="BookName" />
+				<TableColumn fx:id="itemAutColumn" prefWidth="96.0" text="BookAuthor" />
+				<TableColumn fx:id="itemNoColumn" prefWidth="114.0" text="NumberOfBooks" />
+				<TableColumn fx:id="itemTypColumn" prefWidth="76.0" text="BookType" />
+				<TableColumn fx:id="itemStatColumn" prefWidth="88.0" text="BookStatus" />
+				<TableColumn fx:id="itemLimiColumn" prefWidth="93.0" text="BookLimitDays" />
+				<TableColumn fx:id="itemGenColumn" prefWidth="82.0" text="Genre" />
+				<TableColumn fx:id="itemLanColumn" prefWidth="68.0" text="Language" />
+				<TableColumn fx:id="itemPubColumn" prefWidth="77.0" text="Published" />
+				<TableColumn fx:id="itemPagColumn" prefWidth="103.0" text="PagesCount" />
+        </columns>
+      </TableView>
+       <Button layoutX="46.0" layoutY="327.0" mnemonicParsing="false" onAction="#userPage" prefHeight="27.0" prefWidth="106.0" text="Main Page" />
+   </children>
+</AnchorPane>

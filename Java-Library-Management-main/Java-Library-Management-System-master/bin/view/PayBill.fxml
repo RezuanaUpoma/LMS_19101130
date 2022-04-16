@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.DateCell?>
+<?import javafx.scene.control.DatePicker?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="554.0" prefWidth="918.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserBillPayController">
+	<children>
+		<TableView fx:id="tableView" layoutX="14.0" layoutY="14.0" prefHeight="334.0" prefWidth="819.0">
+			<columns>
+				<TableColumn fx:id="itemBiNoColumn" prefWidth="87.0" text="BillNo" />
+				<TableColumn fx:id="itemBidNoColumn" prefWidth="98.0" text="Bill date" />				
+				<TableColumn fx:id="itemAmtColumn" prefWidth="107.0" text="Bill amount" />
+				<TableColumn fx:id="itemBoIdColumn" prefWidth="91.0" text="BookId" />
+				<TableColumn fx:id="itemMeIdColumn" prefWidth="87.0" text="MemberId" />
+				<TableColumn fx:id="itemLiIdColumn" prefWidth="89.0" text="LibrarianId" />
+				<TableColumn fx:id="itemIssColumn" prefWidth="94.0" text="DateIssued" />
+				<TableColumn fx:id="itemRetColumn" prefWidth="108.0" text="ReturnedDate" />
+				<TableColumn fx:id="itemStatColumn" prefWidth="68.0" text="BillStatus" />
+				
+
+
+			</columns>
+		</TableView>
+		<Button layoutX="26.0" layoutY="364.0" mnemonicParsing="false" onAction="#btnBillPay" text="PayBill" />
+
+
+	
+
+		<Label fx:id="check" layoutX="20.0" layoutY="460.0" text="Message" />
+      <Button layoutX="26.0" layoutY="412.0" mnemonicParsing="false" onAction="#mainPage" text="Main Page" />
+		
+     
+
+	</children>
+</AnchorPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalProject.UserActions">
+   <children>
+      <TableView fx:id="tableView" layoutX="23.0" layoutY="33.0" prefHeight="200.0" prefWidth="380.0">
+        <columns>
+          <TableColumn fx:id="itemBookIdColumn" prefWidth="86.0" text="BookId" />
+				<TableColumn fx:id="itemBookNameColumn" prefWidth="97.0" text="BookName" />				
+				<TableColumn fx:id="itembookAuthorColumn" prefWidth="104.0" text="BookAuthor" />
+				<TableColumn fx:id="itemIssusedColumn" prefWidth="92.0" text="DateIssued" />
+        </columns>
+      </TableView>
+      <Button layoutX="52.0" layoutY="325.0" mnemonicParsing="false" onAction="#UserPage" text="Main Page" />
+   </children>
+</AnchorPane>

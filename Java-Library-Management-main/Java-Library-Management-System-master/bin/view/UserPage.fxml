@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="553.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserController">
+   <children>
+      <Button layoutX="90.0" layoutY="212.0" mnemonicParsing="false" onAction="#General" text="Search General Books" />
+      <Button layoutX="259.0" layoutY="212.0" mnemonicParsing="false" onAction="#Reference" prefHeight="27.0" prefWidth="175.0" text="Search Reference Books" />
+      <Button layoutX="90.0" layoutY="294.0" mnemonicParsing="false" onAction="#btnviewIssued" prefHeight="27.0" prefWidth="154.0" text="View Issued Books" />
+      <Button layoutX="259.0" layoutY="294.0" mnemonicParsing="false" onAction="#Billpayment" prefHeight="27.0" prefWidth="175.0" text="Pay Bill" />
+      <Button layoutX="145.0" layoutY="376.0" mnemonicParsing="false" onAction="#Signout" prefHeight="27.0" prefWidth="233.0" text="Sign Out" />
+      <Label alignment="CENTER" layoutX="132.0" layoutY="125.0" prefHeight="17.0" prefWidth="233.0" text="Welcome to User Menu">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

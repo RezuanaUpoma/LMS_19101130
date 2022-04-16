@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.DateCell?>
+<?import javafx.scene.control.DatePicker?>
+<?import model.StringTextField?>
+<?import model.NumberTextField?>
+
+<AnchorPane prefHeight="827.0" prefWidth="997.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewBookController">
+   <children>
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="14.0" prefHeight="334.0" prefWidth="928.0">
+			<columns>
+				<TableColumn fx:id="itemIdColumn" prefWidth="63.0" text="Book ID" />
+				<TableColumn fx:id="itemNameColumn" prefWidth="134.0" text="Book Name" />
+				<TableColumn fx:id="itemAutColumn" prefWidth="126.0" text="Book Author" />
+				<TableColumn fx:id="itemNoColumn" prefWidth="118.0" text="Number Of Books" />
+				<TableColumn fx:id="itemTypColumn" prefWidth="59.0" text="Type" />
+				<TableColumn fx:id="itemStatColumn" prefWidth="64.0" text="Status" />
+				<TableColumn fx:id="itemLimiColumn" prefWidth="103.0" text="Book Limit Days" />
+				<TableColumn fx:id="itemGenColumn" prefWidth="53.0" text="Genre" />
+
+				<TableColumn fx:id="itemLanColumn" prefWidth="86.0" text="Language" />
+
+				<TableColumn fx:id="itemPubColumn" prefWidth="68.0" text="Published" />
+
+				<TableColumn fx:id="itemPagColumn" prefWidth="64.0" text="Pages" />
+
+
+			</columns>
+		</TableView>
+		<Button layoutX="957.0" layoutY="113.0" mnemonicParsing="false" onAction="#addGeneralBook" text="Add" />
+		<Button layoutX="957.0" layoutY="168.0" mnemonicParsing="false" onAction="#updateGeneralBook" text="Update Book" />
+      <Button layoutX="957.0" layoutY="221.0" mnemonicParsing="false" onAction="#issueBook" text="Issue Book" />
+
+
+		<Label layoutX="31.0" layoutY="349.0" text="BookName" />
+		<StringTextField  fx:id="bookName" layoutX="18.0" layoutY="366.0" prefHeight="26.0" prefWidth="104.0" />
+		<StringTextField fx:id="bookAuthor" layoutX="130.0" layoutY="366.0" prefHeight="26.0" prefWidth="115.0" />
+		<Label layoutX="137.0" layoutY="348.0" text="Author" />
+		<NumberTextField  fx:id="noOfBooks" layoutX="255.0" layoutY="365.0" prefHeight="26.0" prefWidth="115.0" />
+		<Label layoutX="263.0" layoutY="349.0" text="Number of books" />
+		<StringTextField  fx:id="typeOfBooks" layoutX="380.0" layoutY="365.0" prefHeight="26.0" prefWidth="115.0" />
+		<Label layoutX="387.0" layoutY="349.0" text="Book type" />
+		<StringTextField  fx:id="bookStatus" layoutX="505.0" layoutY="365.0" prefHeight="26.0" prefWidth="115.0" />
+		<Label layoutX="512.0" layoutY="349.0" text="Book Status" />
+		<NumberTextField  fx:id="bookLimitDays" layoutX="634.0" layoutY="365.0" prefHeight="26.0" prefWidth="115.0" />
+		<Label layoutX="637.0" layoutY="349.0" text="Book Limit" />
+
+		<Label fx:id="check" layoutX="19.0" layoutY="459.0" text="Message" textFill="#e12121" />
+		<Label layoutX="31.0" layoutY="402.0" text="Book Genre" />
+		<StringTextField fx:id="genre" layoutX="19.0" layoutY="419.0" prefHeight="26.0" prefWidth="104.0" />
+		<Label layoutX="140.0" layoutY="402.0" text="Book Published" />
+		<DatePicker fx:id="published" layoutX="136.0" layoutY="419.0" prefHeight="26.0" prefWidth="104.0" />
+		<Label layoutX="262.0" layoutY="402.0" text="Language Written " />
+		<StringTextField  fx:id="language" layoutX="258.0" layoutY="419.0" prefHeight="26.0" prefWidth="104.0" />
+		<Label layoutX="387.0" layoutY="402.0" text="No of pages" />
+		<NumberTextField  fx:id="pages" layoutX="386.0" layoutY="419.0" prefHeight="26.0" prefWidth="104.0" />
+      <Label layoutX="171.0" layoutY="485.0" text="Member Id" />
+      <NumberTextField fx:id="memberId" layoutX="159.0" layoutY="502.0" prefHeight="26.0" prefWidth="104.0" />
+      <Label layoutX="296.0" layoutY="485.0" text="Librarian Id" />
+      <NumberTextField fx:id="librarianId" layoutX="283.0" layoutY="502.0" prefHeight="26.0" prefWidth="104.0" />
+      <Label fx:id="check1" layoutX="6.0" layoutY="506.0" text="Please Enter Member ID and Librarian Id" />
+      <Button layoutX="957.0" layoutY="278.0" mnemonicParsing="false" onAction="#mainPage" text="Main Page" />
+   </children>
+</AnchorPane>

@@ -27,5 +27,5 @@ This software project was developed as part of a university course, focusing on 
 4. The application will allow interaction between students and the librarian for book management.
 
 ## **Project Screenshot:**
-![Library Management System](./path-to-your-screenshot.png)
+![Library Management System](./Java Library Management System.png)
 

@@ -1,4 +1,4 @@
-# SOFTWARE_PROJECT: Library Management System**
+# SOFTWARE_PROJECT: Library Management System
 
 This software project was developed as part of a university course, focusing on managing library operations efficiently. The system is designed with two main user roles: **Librarian** and **Students**, each having specific functionalities to manage books, users, and borrowing processes.
 
